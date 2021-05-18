@@ -16,12 +16,12 @@ const calculateTotal = (base_price, state, tax = 0.05) => {
   /** Return the total price of an item, figuring in state taxes and fees.
 
   Arguments:
-      base_price (float): Base price of an item
-      state (str): Two-letter abbreviation of a U.S. state
-      tax (float): Tax rate. Defaults to 0.05
+      base_price (number): Base price of an item
+      state (number): Two-letter abbreviation of a U.S. state
+      tax (number): Tax rate. Defaults to 0.05
 
   Returns:
-      float: The total price of an item
+      Number: The total price of an item
   */
 
   let subtotal = base_price * (1 + tax);
